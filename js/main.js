@@ -1,7 +1,7 @@
-const results = document.getElementById('results');
-const calculate = document.getElementById('calculate');
-const reset = document.getElementById('reset');
-const error = document.getElementById('error');
+var results = document.getElementById('results');
+var calculate = document.getElementById('calculate');
+var reset = document.getElementById('reset');
+var error = document.getElementById('error');
 var inches = document.getElementById('inches');
 var numerator = document.getElementById('numerator');
 var denominator = document.getElementById('denominator');
@@ -43,9 +43,15 @@ function displayResults() {
 
     pitch.innerHTML = degrees;
 
-    topRailRightValue.forEach(num => num.innerHTML = Number((180 - degrees) / 2).toFixed(1));
-    slopedPostValue.forEach(num => num.innerHTML = Number(90 - degrees).toFixed(1));
-    slopedRailRightValue.forEach(num => num.innerHTML = Number((90 + degrees) / 2).toFixed(1));
+    for (num = 0; num < topRailRightValue.length; num++) {
+      topRailRightValue[num].innerHTML = Number((180 - degrees) / 2).toFixed(1);
+    };
+    for (num = 0; num < slopedPostValue.length; num++) {
+      slopedPostValue[num].innerHTML = Number(90 - degrees).toFixed(1);
+    };
+    for (num = 0; num < slopedRailRightValue.length; num++) {
+      slopedRailRightValue[num].innerHTML = Number((90 + degrees) / 2).toFixed(1);
+    };
 
     results.style.display = 'block';
     results.scrollIntoView();
