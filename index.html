@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Handrail Helper</title>
+
+  </head>
+
+
+  <body>
+
+
+    <!-- Header -->
+    <div id="header" class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <img id="logo" src="img/logo.png" alt="handrail helper logo">
+        </div>
+        <div class="col-xs-6">
+          <button id="reset" class="pull-right" type="button" name="button">RESET</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Input -->
+    <div id="form" class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 id="formText" class="text-center">ENTER HANDRAIL PITCH BELOW</h3>
+          <form class="text-center" action="index.html" method="post">
+            <input id="inches" class="input" type="number" name="" placeholder=7>
+            &nbsp;
+            <input id="numerator" class="input" type="number" name="" placeholder=3>
+            /
+            <input id="denominator" class="input" type="number" name="" placeholder=16>
+            "
+            <p class="formText">over</p>
+            <input id="run" class="inputRun text-center" type="number" name="" value="12">"
+            <button id="calculate" class="center-block" type="button" name="button">CALCULATE</button>
+            <p id="error" class="text-center" style="display: none">ENTER RISE OF PITCH</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+
+
+      <!-- Drawing -->
+    <div id="results" class="container" style="display: none">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center">YOUR PITCH IS  <span id="pitch"></span>&deg;</h3>
+        </div>
+      </div>
+      <div id="drawing" class="center-block row">
+        <div class="col-xs-2">
+          <p id="topRailLeft">45&deg;</p>
+          <p id="topPostUp">45&deg;</p>
+          <p id="topPostDown">90&deg;</p>
+        </div>
+        <div class="col-xs-2">
+          <p id="topRailRight"><span class="topRailRightValue"></span>&deg;</p>
+          <p id="topBarRight"><span class="topRailRightValue"></span>&deg;</p>
+        </div>
+        <div class="col-xs-2">
+          <p id="slopedRailLeft"><span class="topRailRightValue"></span>&deg;</p>
+          <p id="slopedBarLeft"><span class="topRailRightValue"></span>&deg;</p>
+        </div>
+        <div class="col-xs-2">
+          <p id="slopedPostUp"><span class="slopedPostValue"></span>&deg;</p>
+          <p id="slopedBarRight"><span class="slopedPostValue"></span>&deg;</p>
+          <p id="slopedPostDown"><span class="slopedPostValue"></span>&deg;</p>
+        </div>
+        <div class="col-xs-2">
+
+        </div>
+        <div class="col-xs-2">
+          <p id="slopedRailRight"><span class="slopedRailRightValue"></span>&deg;</p>
+          <p id="bottomPostUp"><span class="slopedRailRightValue"></span>&deg;</p>
+          <p id="bottomPostDown"><span class="slopedPostValue"></span>&deg;</p>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
