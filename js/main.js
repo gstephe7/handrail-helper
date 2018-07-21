@@ -81,8 +81,15 @@ function resetResults() {
   denominator.style.outline = 'none';
   run.style.outline = 'none';
   error.style.display = 'none';
+
+  form.scrollIntoView();
 }
 
 
 calculate.addEventListener('click', displayResults);
+document.addEventListener('keyup', function(e) {
+  if (e.keyCode === 13) {
+    displayResults();
+  }
+});
 reset.addEventListener('click', resetResults);
