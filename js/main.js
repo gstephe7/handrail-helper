@@ -21,13 +21,15 @@ function displayResults() {
   inchesValue = Number(inches.value);
   numeratorValue = Number(numerator.value);
   denominatorValue = Number(denominator.value);
+  runValue = Number(run.value);
   var rise = 0;
 
-  if (inchesValue > 0 || numeratorValue > 0) {
+  if (inchesValue > 0 && runValue >= 0 || numeratorValue > 0 && runValue >= 0) {
 
     inches.style.outline = 'none';
     numerator.style.outline = 'none';
     denominator.style.outline = 'none';
+    run.style.outline = 'none';
     error.style.display = 'none';
 
     if (numeratorValue <= 0 || denominatorValue <= 0) {
@@ -35,8 +37,6 @@ function displayResults() {
     } else {
       rise = inchesValue + (numeratorValue / denominatorValue);
     }
-
-    runValue = Number(run.value);
 
     var angle = Math.atan(rise / runValue);
     var degrees = Number((angle * 180 / Math.PI).toFixed(2));
@@ -55,6 +55,7 @@ function displayResults() {
     inches.style.outline = 'solid red';
     numerator.style.outline = 'solid red';
     denominator.style.outline = 'solid red';
+    run.style.outline = 'solid red';
     error.style.display = 'block';
 
   }
@@ -78,6 +79,7 @@ function resetResults() {
   inches.style.outline = 'none';
   numerator.style.outline = 'none';
   denominator.style.outline = 'none';
+  run.style.outline = 'none';
   error.style.display = 'none';
 }
 
