@@ -43,13 +43,13 @@ function displayResults() {
 
     pitch.innerHTML = degrees;
 
-    for (num = 0; num < topRailRightValue.length; num++) {
+    for (var num = 0; num < topRailRightValue.length; num++) {
       topRailRightValue[num].innerHTML = Number((180 - degrees) / 2).toFixed(1);
     };
-    for (num = 0; num < slopedPostValue.length; num++) {
+    for (var num = 0; num < slopedPostValue.length; num++) {
       slopedPostValue[num].innerHTML = Number(90 - degrees).toFixed(1);
     };
-    for (num = 0; num < slopedRailRightValue.length; num++) {
+    for (var num = 0; num < slopedRailRightValue.length; num++) {
       slopedRailRightValue[num].innerHTML = Number((90 + degrees) / 2).toFixed(1);
     };
 
