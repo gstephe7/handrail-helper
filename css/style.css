@@ -1,12 +1,13 @@
-html {
+html, body, .container {
   overflow-x: hidden;
+  color: #645e5e;
 }
 
 @media screen and (max-width: 767px) {
 
   #header {
     height: 70px;
-    border-bottom: 5px solid darkblue;
+    border-bottom: 5px solid #645e5e;;
     box-shadow: 5px 5px rgba(239, 239, 239);
     position: fixed;
     width: 100vw;
@@ -20,7 +21,7 @@ html {
   }
 
   #reset {
-    background-color: red;
+    background-color: #f22626;
     font-size: 25px;
     margin: 12.5px 10px 0 0;
     border-radius: 10px;
@@ -40,7 +41,7 @@ html {
   }
 
   #formText {
-    color: darkblue;
+    color: #645e5e;
     font-family: helvetica, sans-serif;
     font-weight: 100;
   }
@@ -48,13 +49,13 @@ html {
   .input {
     margin-top: 20px;
     width: 60px;
-    border: black thin solid;
+    border: #645e5e thin solid;
   }
 
   .inputRun {
     margin-top: 20px;
     width: 80px;
-    border: black thin solid;
+    border: #645e5e thin solid;
   }
 
   ::placeholder {
@@ -75,7 +76,7 @@ html {
     font-family: 'Black Ops One', sans-serif;
     margin-top: 40px;
     border-radius: 10px;
-    background-color: green;
+    background-color: #3c9642;
     color: white;
     box-shadow: 5px 5px rgba(239, 239, 239);
     outline: none;
@@ -83,14 +84,14 @@ html {
 
   #error {
     font-size: 18px;
-    color: red;
+    color: #f22626;
   }
 
   #results {
     padding-top: 70px;
     margin-bottom: 100px;
     font-size: 18px;
-    color: darkblue;
+    color: #645e5e;;
   }
 
   #drawing {
@@ -175,7 +176,7 @@ html {
 
   #header {
     height: 70px;
-    border-bottom: 5px solid darkblue;
+    border-bottom: 5px solid #645e5e;;
     box-shadow: 5px 5px rgba(239, 239, 239);
     position: fixed;
     width: 100%;
@@ -189,7 +190,7 @@ html {
   }
 
   #reset {
-    background-color: red;
+    background-color: #f22626;
     color: white;
     font-size: 25px;
     margin: 12.5px 10px 0 0;
@@ -208,19 +209,19 @@ html {
   }
 
   #formText {
-    color: darkblue
+    color: #645e5e;
   }
 
   .input {
     margin-top: 20px;
     width: 80px;
-    border: black thin solid;
+    border: #645e5e thin solid;
   }
 
   .inputRun {
     margin-top: 20px;
     width: 80px;
-    border: black thin solid;
+    border: #645e5e thin solid;
   }
 
   ::placeholder {
@@ -237,7 +238,7 @@ html {
     font-family: 'Black Ops One', sans-serif;
     margin-top: 40px;
     border-radius: 10px;
-    background-color: green;
+    background-color: #3c9642;
     color: white;
     box-shadow: 5px 5px rgba(239, 239, 239);
     outline: none;
@@ -245,14 +246,14 @@ html {
 
   #error {
     font-size: 18px;
-    color: red;
+    color: #f22626;
   }
 
   #results {
     padding-top: 70px;
     margin-bottom: 100px;
     font-size: 20px;
-    color: darkblue;
+    color: #645e5e;;
   }
 
   #drawing {

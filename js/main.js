@@ -58,10 +58,10 @@ function displayResults() {
 
   } else {
 
-    inches.style.outline = 'solid red';
-    numerator.style.outline = 'solid red';
-    denominator.style.outline = 'solid red';
-    run.style.outline = 'solid red';
+    inches.style.outline = 'solid #f22626';
+    numerator.style.outline = 'solid #f22626';
+    denominator.style.outline = 'solid #f22626';
+    run.style.outline = 'solid #f22626';
     error.style.display = 'block';
 
   }
